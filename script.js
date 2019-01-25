@@ -1,4 +1,4 @@
-
+/* ZAD 1 CHOINKA wersja niestabilna bo tylko pół*/
 function drawTreeBody(size){
 var boo="";
 
@@ -38,9 +38,17 @@ function drawWholeTree(par1,par2,par3,par4){
     drawTreeBottom(par4);
 }
 
+function drawWholeTreeWith1Param(par1){
+    drawTreeBody(par1);
+    drawTreeCore(1/10*par1,1/10*par1);
+    drawTreeBottom(par1-1);
+}
+
 drawTreeBody(12);
 drawTreeCore(3,3);
 drawTreeBottom(5);
 
 
 drawWholeTree(15,2,2,7);
+
+drawWholeTreeWith1Param(15);
