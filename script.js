@@ -1,6 +1,7 @@
 
 function drawTreeBody(size){
 var boo="";
+
 for(let i=0;i<size;i++){
      for(let k=0;k<i;k++){
      boo +="#";
@@ -21,8 +22,8 @@ for(let k=0;k<height;k++){
 console.log(boo);
 
 }
-
 }
+
 function drawTreeBottom(size){
     var boo="";
     for(let i=0;i<size;i++){
